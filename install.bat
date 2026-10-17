@@ -1,7 +1,7 @@
 @echo off
 setlocal EnableDelayedExpansion
 
-set "PROFILE_URL=https://raw.githubusercontent.com/brycefors/PowerShell-Profile/main/Microsoft.PowerShell_profile.ps1"
+set "PROFILE_URL=https://raw.githubusercontent.com/bryceforsm/PowerShell-Profile/main/Microsoft.PowerShell_profile.ps1"
 
 echo Checking for PowerShell 7...
 where pwsh.exe >nul 2>&1

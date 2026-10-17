@@ -946,7 +946,7 @@ if (-not (Test-Path Alias:reload)) { Set-Alias reload Import-Profile -Scope Glob
 
 # Pull latest profile from GitHub
 function global:Update-ProfileFromRemote {
-    $url = "https://raw.githubusercontent.com/brycefors/PowerShell-Profile/main/Microsoft.PowerShell_profile.ps1"
+    $url = "https://raw.githubusercontent.com/bryceforsm/PowerShell-Profile/main/Microsoft.PowerShell_profile.ps1"
     Write-Host "Downloading latest profile from GitHub..." -ForegroundColor Yellow
     try {
         $content = (Invoke-WebRequest $url -UseBasicParsing).Content -replace "`r`n", "`n" -replace "`n", "`r`n"
